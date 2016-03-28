@@ -38,8 +38,10 @@ namespace web_api
 
             app.UseIISPlatformHandler();
 
-            app.UseStaticFiles();
+            app.UseDefaultFiles();
 
+            app.UseStaticFiles();
+            
             app.UseMvc();
         }
 
