@@ -21,7 +21,7 @@
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-rename": "^1.2.2",
-    "tsc": "^1.20150623.0",
+    "gulp-typescript": "^2.12.1",
     "typescript": "^1.8.9",
     "typings": "^0.7.9"
   }

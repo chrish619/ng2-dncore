@@ -1,5 +1,7 @@
 var gulp = require('gulp'),
-    rename = require('gulp-rename');
+    rename = require('gulp-rename'),
+    ts = require('gulp-typescript'),
+    typescript = require('typescript');
 
 var npm_dependencies = [
     './node_modules/es6-shim/es6-shim.min.js',
@@ -12,7 +14,7 @@ var npm_dependencies = [
 ];
 
 
-gulp.task('copy:dependencies', [], function() {
+gulp.task('web:js:dependencies', [], function() {
     return gulp.src(npm_dependencies, { base: './' })
         .pipe(rename(function(path) {
             /*var dirpath = path.dirname.replace(/node_modules/, '').replace(/(^[\/\\]*|[\/\\]+)/g, '_');*/
@@ -23,3 +25,13 @@ gulp.task('copy:dependencies', [], function() {
         .pipe(gulp.dest('./wwwroot/lib'));
 });
 
+gulp.task('web:ts:build', [], function() {
+    var proj = ts.createProject('tsconfig.json');
+    return proj.src()
+        .pipe(ts(proj))
+        .js.pipe(gulp.dest('./'));
+});
+
+gulp.task('build:web', ['web:ts:build', 'web:js:dependencies'], function() {
+
+});

@@ -3,4 +3,6 @@ import {AppComponent} from './app.component';
 import {IndexComponent} from './index/index.component';
 
 bootstrap(AppComponent)
-    .then(() => bootstrap(IndexComponent));
+    .catch((reason) => console.log(reason));
+bootstrap(IndexComponent)
+    .catch((reason) => console.log(reason));
