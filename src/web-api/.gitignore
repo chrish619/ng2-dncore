@@ -183,7 +183,7 @@ ClientBin/
 *.publishsettings
 node_modules/
 wwwroot/bower_components/
-wwwroot/app/lib
+wwwroot/lib
 wwwroot/app/*.js
 typings/
 orleans.codegen.cs

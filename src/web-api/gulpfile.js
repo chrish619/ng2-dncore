@@ -21,6 +21,6 @@ gulp.task('copy:dependencies', [], function() {
             
             return path;
         }))
-        .pipe(gulp.dest('./wwwroot/app/lib'));
+        .pipe(gulp.dest('./wwwroot/lib'));
 });
 
