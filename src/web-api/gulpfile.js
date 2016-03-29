@@ -18,7 +18,6 @@ gulp.task('copy:dependencies', [], function() {
             /*var dirpath = path.dirname.replace(/node_modules/, '').replace(/(^[\/\\]*|[\/\\]+)/g, '_');*/
             path.dirname = ''
             /*path.basename = [dirpath, path.basename].join('_')*/
-            
             return path;
         }))
         .pipe(gulp.dest('./wwwroot/lib'));

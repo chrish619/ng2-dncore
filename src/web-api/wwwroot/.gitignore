@@ -1,0 +1,4 @@
+bower_components/
+lib
+app/**/*.js
+app/**/*.js.map
