@@ -1,0 +1,24 @@
+{
+  "name": "web-api",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Chris Hewitt <chris@blackcadre.co.uk>"
+  ],
+  "license": "ISC",
+  "moduleType": [
+    "amd"
+  ],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "bootstrap": "^3.3.6"
+  }
+}

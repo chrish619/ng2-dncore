@@ -182,6 +182,9 @@ ClientBin/
 *.pfx
 *.publishsettings
 node_modules/
+wwwroot/bower_components/
+wwwroot/app/lib
+wwwroot/app/*.js
 typings/
 orleans.codegen.cs
 
